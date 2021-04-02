@@ -148,5 +148,11 @@ namespace TTManagesyst
             
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ManageStudent stdm = new ManageStudent();
+            stdm.Show();
+        } 
     }
 }

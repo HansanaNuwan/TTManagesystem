@@ -30,6 +30,8 @@ namespace TTManagesyst
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TBtagId = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.dgvTags = new System.Windows.Forms.DataGridView();
             this.CBRetaledTag = new System.Windows.Forms.ComboBox();
             this.btnDel = new System.Windows.Forms.Button();
@@ -43,8 +45,7 @@ namespace TTManagesyst
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TBtagId = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTags)).BeginInit();
             this.panel2.SuspendLayout();
@@ -53,6 +54,7 @@ namespace TTManagesyst
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.TBtagId);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.dgvTags);
@@ -71,6 +73,23 @@ namespace TTManagesyst
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1048, 482);
             this.panel1.TabIndex = 0;
+            // 
+            // TBtagId
+            // 
+            this.TBtagId.Location = new System.Drawing.Point(267, 276);
+            this.TBtagId.Name = "TBtagId";
+            this.TBtagId.ReadOnly = true;
+            this.TBtagId.Size = new System.Drawing.Size(112, 20);
+            this.TBtagId.TabIndex = 15;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(190, 279);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(40, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Tag ID";
             // 
             // dgvTags
             // 
@@ -199,22 +218,15 @@ namespace TTManagesyst
             this.label1.Text = "Manage Tags";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label5
+            // button1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(190, 279);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(40, 13);
-            this.label5.TabIndex = 14;
-            this.label5.Text = "Tag ID";
-            // 
-            // TBtagId
-            // 
-            this.TBtagId.Location = new System.Drawing.Point(267, 276);
-            this.TBtagId.Name = "TBtagId";
-            this.TBtagId.ReadOnly = true;
-            this.TBtagId.Size = new System.Drawing.Size(112, 20);
-            this.TBtagId.TabIndex = 15;
+            this.button1.Location = new System.Drawing.Point(511, 440);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "Add Student";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Tags
             // 
@@ -252,6 +264,7 @@ namespace TTManagesyst
         private System.Windows.Forms.ComboBox CBRetaledTag;
         private System.Windows.Forms.TextBox TBtagId;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button button1;
     }
 }
 
