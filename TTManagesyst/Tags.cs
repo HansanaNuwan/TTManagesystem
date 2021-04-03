@@ -153,6 +153,11 @@ namespace TTManagesyst
         {
             ManageStudent stdm = new ManageStudent();
             stdm.Show();
-        } 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

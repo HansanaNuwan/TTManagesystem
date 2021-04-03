@@ -49,6 +49,8 @@ namespace TTManagesyst
             this.TBID = new System.Windows.Forms.TextBox();
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NMGroupNo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NMSubGroupNo)).BeginInit();
@@ -163,6 +165,7 @@ namespace TTManagesyst
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnAdd
             // 
@@ -172,6 +175,7 @@ namespace TTManagesyst
             this.btnAdd.TabIndex = 13;
             this.btnAdd.Text = "Save";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnGenerate
             // 
@@ -186,7 +190,7 @@ namespace TTManagesyst
             // lblGroupID
             // 
             this.lblGroupID.AutoSize = true;
-            this.lblGroupID.Location = new System.Drawing.Point(469, 334);
+            this.lblGroupID.Location = new System.Drawing.Point(597, 335);
             this.lblGroupID.Name = "lblGroupID";
             this.lblGroupID.Size = new System.Drawing.Size(50, 13);
             this.lblGroupID.TabIndex = 15;
@@ -195,7 +199,7 @@ namespace TTManagesyst
             // lblSGroupID
             // 
             this.lblSGroupID.AutoSize = true;
-            this.lblSGroupID.Location = new System.Drawing.Point(469, 377);
+            this.lblSGroupID.Location = new System.Drawing.Point(597, 372);
             this.lblSGroupID.Name = "lblSGroupID";
             this.lblSGroupID.Size = new System.Drawing.Size(72, 13);
             this.lblSGroupID.TabIndex = 16;
@@ -206,8 +210,9 @@ namespace TTManagesyst
             this.dgvManageStudent.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvManageStudent.Location = new System.Drawing.Point(41, 84);
             this.dgvManageStudent.Name = "dgvManageStudent";
-            this.dgvManageStudent.Size = new System.Drawing.Size(727, 201);
+            this.dgvManageStudent.Size = new System.Drawing.Size(736, 201);
             this.dgvManageStudent.TabIndex = 17;
+            this.dgvManageStudent.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvManageStudent_RowHeaderMouseClick);
             // 
             // label6
             // 
@@ -234,6 +239,7 @@ namespace TTManagesyst
             this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
@@ -243,12 +249,33 @@ namespace TTManagesyst
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(508, 332);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 13);
+            this.label7.TabIndex = 22;
+            this.label7.Text = "Group ID";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(508, 372);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 13);
+            this.label8.TabIndex = 23;
+            this.label8.Text = "Sub Group ID";
             // 
             // ManageStudent
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(812, 549);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.TBID);
@@ -270,6 +297,7 @@ namespace TTManagesyst
             this.Controls.Add(this.panel1);
             this.Name = "ManageStudent";
             this.Text = "StudentManage";
+            this.Load += new System.EventHandler(this.ManageStudent_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NMGroupNo)).EndInit();
@@ -302,5 +330,7 @@ namespace TTManagesyst
         private System.Windows.Forms.TextBox TBID;
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
