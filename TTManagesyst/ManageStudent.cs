@@ -31,6 +31,8 @@ namespace TTManagesyst
 
             lblSGroupID.Text = ys + "." + pg + "." + gn + "."+ sgn;
 
+            btnUpdate.Enabled = true;
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -77,6 +79,8 @@ namespace TTManagesyst
             DataTable dt = m.Select();
             dgvManageStudent.DataSource = dt;
 
+            btnUpdate.Enabled = false;
+
         }
         //method to clear fields
         public void Clear() 
@@ -95,6 +99,7 @@ namespace TTManagesyst
         {
             //call clear method
             Clear();
+            btnUpdate.Enabled = false;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)
@@ -126,7 +131,8 @@ namespace TTManagesyst
                 //if failed
                 MessageBox.Show("Failed to update data !");
             }
-           
+            btnUpdate.Enabled = false;
+
 
 
         }
@@ -178,6 +184,14 @@ namespace TTManagesyst
                 MessageBox.Show("Failed to Delete data !");
             }
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AddStudent stdm = new AddStudent();
+            stdm.Show();
+
+            this.Close();
         }
     }
 }
