@@ -30,7 +30,6 @@ namespace TTManagesyst
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.TBtagId = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.dgvTags = new System.Windows.Forms.DataGridView();
@@ -54,7 +53,6 @@ namespace TTManagesyst
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.TBtagId);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.dgvTags);
@@ -75,19 +73,9 @@ namespace TTManagesyst
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(511, 440);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "Add Student";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // TBtagId
             // 
-            this.TBtagId.Location = new System.Drawing.Point(267, 276);
+            this.TBtagId.Location = new System.Drawing.Point(294, 277);
             this.TBtagId.Name = "TBtagId";
             this.TBtagId.ReadOnly = true;
             this.TBtagId.Size = new System.Drawing.Size(112, 20);
@@ -96,7 +84,7 @@ namespace TTManagesyst
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(190, 279);
+            this.label5.Location = new System.Drawing.Point(217, 280);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(40, 13);
             this.label5.TabIndex = 14;
@@ -119,61 +107,65 @@ namespace TTManagesyst
             "Lecture",
             "Tutorial",
             "Lab"});
-            this.CBRetaledTag.Location = new System.Drawing.Point(267, 387);
+            this.CBRetaledTag.Location = new System.Drawing.Point(294, 388);
             this.CBRetaledTag.Name = "CBRetaledTag";
             this.CBRetaledTag.Size = new System.Drawing.Size(112, 21);
             this.CBRetaledTag.TabIndex = 12;
             // 
             // btnDel
             // 
-            this.btnDel.Location = new System.Drawing.Point(429, 444);
+            this.btnDel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnDel.Location = new System.Drawing.Point(446, 430);
             this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(51, 20);
+            this.btnDel.Size = new System.Drawing.Size(57, 29);
             this.btnDel.TabIndex = 11;
             this.btnDel.Text = "Delete";
-            this.btnDel.UseVisualStyleBackColor = true;
+            this.btnDel.UseVisualStyleBackColor = false;
             this.btnDel.Click += new System.EventHandler(this.btnDel_Click);
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(351, 445);
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnUpdate.Location = new System.Drawing.Point(367, 430);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(55, 20);
+            this.btnUpdate.Size = new System.Drawing.Size(63, 28);
             this.btnUpdate.TabIndex = 10;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(267, 445);
+            this.btnAdd.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnAdd.Location = new System.Drawing.Point(289, 430);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(57, 20);
+            this.btnAdd.Size = new System.Drawing.Size(64, 29);
             this.btnAdd.TabIndex = 9;
             this.btnAdd.Text = "Add";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnclear
             // 
-            this.btnclear.Location = new System.Drawing.Point(179, 445);
+            this.btnclear.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.btnclear.Location = new System.Drawing.Point(202, 430);
             this.btnclear.Name = "btnclear";
-            this.btnclear.Size = new System.Drawing.Size(64, 20);
+            this.btnclear.Size = new System.Drawing.Size(72, 29);
             this.btnclear.TabIndex = 8;
             this.btnclear.Text = "Clear";
-            this.btnclear.UseVisualStyleBackColor = true;
+            this.btnclear.UseVisualStyleBackColor = false;
             this.btnclear.Click += new System.EventHandler(this.btnclear_Click);
             // 
             // TBTagCode
             // 
-            this.TBTagCode.Location = new System.Drawing.Point(267, 347);
+            this.TBTagCode.Location = new System.Drawing.Point(294, 348);
             this.TBTagCode.Name = "TBTagCode";
             this.TBTagCode.Size = new System.Drawing.Size(112, 20);
             this.TBTagCode.TabIndex = 6;
             // 
             // TBTagname
             // 
-            this.TBTagname.Location = new System.Drawing.Point(267, 307);
+            this.TBTagname.Location = new System.Drawing.Point(294, 308);
             this.TBTagname.Name = "TBTagname";
             this.TBTagname.Size = new System.Drawing.Size(112, 20);
             this.TBTagname.TabIndex = 5;
@@ -182,7 +174,7 @@ namespace TTManagesyst
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Location = new System.Drawing.Point(190, 387);
+            this.label4.Location = new System.Drawing.Point(217, 388);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(62, 13);
             this.label4.TabIndex = 4;
@@ -192,7 +184,7 @@ namespace TTManagesyst
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(190, 349);
+            this.label3.Location = new System.Drawing.Point(217, 350);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 3;
@@ -202,7 +194,7 @@ namespace TTManagesyst
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(190, 310);
+            this.label2.Location = new System.Drawing.Point(217, 311);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 2;
@@ -211,22 +203,22 @@ namespace TTManagesyst
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel2.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(190, 22);
+            this.panel2.Location = new System.Drawing.Point(0, -9);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(289, 87);
+            this.panel2.Size = new System.Drawing.Size(661, 66);
             this.panel2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F);
-            this.label1.Location = new System.Drawing.Point(69, 30);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(280, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(138, 30);
+            this.label1.Size = new System.Drawing.Size(166, 30);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Manage Tags";
+            this.label1.Text = "MANAGE TAGS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Tags
@@ -265,7 +257,6 @@ namespace TTManagesyst
         private System.Windows.Forms.ComboBox CBRetaledTag;
         private System.Windows.Forms.TextBox TBtagId;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button button1;
     }
 }
 

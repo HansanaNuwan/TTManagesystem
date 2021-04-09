@@ -16,7 +16,7 @@ namespace TTManagesyst
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Tags());
+            Application.Run(new AddStudent());
         }
     }
 }

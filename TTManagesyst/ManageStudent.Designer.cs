@@ -60,21 +60,21 @@ namespace TTManagesyst
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(23, 13);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(288, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 24);
+            this.label1.Size = new System.Drawing.Size(292, 24);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Add Student Groups";
+            this.label1.Text = "MANAGE STUDENT GROUPS";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.panel1.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(289, 12);
+            this.panel1.Location = new System.Drawing.Point(0, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(221, 50);
+            this.panel1.Size = new System.Drawing.Size(811, 64);
             this.panel1.TabIndex = 1;
             // 
             // label2
@@ -159,22 +159,24 @@ namespace TTManagesyst
             // 
             // btnClear
             // 
+            this.btnClear.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnClear.Location = new System.Drawing.Point(260, 509);
             this.btnClear.Name = "btnClear";
-            this.btnClear.Size = new System.Drawing.Size(75, 23);
+            this.btnClear.Size = new System.Drawing.Size(75, 33);
             this.btnClear.TabIndex = 12;
             this.btnClear.Text = "Clear";
-            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.UseVisualStyleBackColor = false;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // btnGenerate
             // 
+            this.btnGenerate.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnGenerate.Location = new System.Drawing.Point(541, 415);
             this.btnGenerate.Name = "btnGenerate";
-            this.btnGenerate.Size = new System.Drawing.Size(75, 23);
+            this.btnGenerate.Size = new System.Drawing.Size(86, 33);
             this.btnGenerate.TabIndex = 14;
             this.btnGenerate.Text = "Generate ID";
-            this.btnGenerate.UseVisualStyleBackColor = true;
+            this.btnGenerate.UseVisualStyleBackColor = false;
             this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
             // 
             // dgvManageStudent
@@ -205,22 +207,24 @@ namespace TTManagesyst
             // 
             // btnUpdate
             // 
+            this.btnUpdate.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnUpdate.Location = new System.Drawing.Point(446, 509);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.Size = new System.Drawing.Size(75, 33);
             this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "Update";
-            this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.UseVisualStyleBackColor = false;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnDelete
             // 
+            this.btnDelete.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnDelete.Location = new System.Drawing.Point(541, 509);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.Size = new System.Drawing.Size(75, 33);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Delete";
-            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.UseVisualStyleBackColor = false;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // label7
@@ -243,12 +247,13 @@ namespace TTManagesyst
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.SystemColors.ControlLight;
             this.button1.Location = new System.Drawing.Point(353, 509);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 24;
             this.button1.Text = "Add";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // lblGroupID
@@ -269,7 +274,7 @@ namespace TTManagesyst
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(812, 549);
+            this.ClientSize = new System.Drawing.Size(812, 565);
             this.Controls.Add(this.lblSGroupID);
             this.Controls.Add(this.lblGroupID);
             this.Controls.Add(this.button1);
