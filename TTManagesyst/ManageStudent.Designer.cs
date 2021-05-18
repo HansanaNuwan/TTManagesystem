@@ -186,6 +186,7 @@ namespace TTManagesyst
             this.dgvManageStudent.Name = "dgvManageStudent";
             this.dgvManageStudent.Size = new System.Drawing.Size(736, 201);
             this.dgvManageStudent.TabIndex = 17;
+            this.dgvManageStudent.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvManageStudent_CellContentClick);
             this.dgvManageStudent.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dgvManageStudent_RowHeaderMouseClick);
             // 
             // label6

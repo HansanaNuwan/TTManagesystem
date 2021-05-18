@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTManagesyst.CRUD;
 
@@ -20,12 +13,12 @@ namespace TTManagesyst
 
         ManageStudentClass m = new ManageStudentClass();
 
-        
+
         private void AddStudent_Load(object sender, EventArgs e)
         {
-          
-                btnAdd.Enabled = false;
-           
+
+            btnAdd.Enabled = false;
+
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -57,13 +50,13 @@ namespace TTManagesyst
                 //if failed
                 MessageBox.Show("Failed to Add Student Group !");
             }
-            
+
         }
 
         //method to clear fields
         public void Clear()
         {
-            
+
             CBYearSem.Text = "";
             CBProgramme.Text = "";
             NMGroupNo.Value = 0;
@@ -96,11 +89,11 @@ namespace TTManagesyst
 
         private void button1_Click(object sender, EventArgs e)
         {
-   
+
             ManageStudent stdm = new ManageStudent();
             stdm.Show();
 
-            
+
         }
 
         private void label1_Click(object sender, EventArgs e)

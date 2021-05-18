@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Text;
 
 namespace TTManagesyst.CRUDclasses
 {
@@ -15,8 +13,8 @@ namespace TTManagesyst.CRUDclasses
         public string TagName { get; set; }
         public string TagCode { get; set; }
         public string RelatedTag { get; set; }
-       
-        
+
+
         //this can be an error01
         static string myconnstrng = ConfigurationManager.ConnectionStrings["connstrng"].ConnectionString;
 
@@ -93,7 +91,7 @@ namespace TTManagesyst.CRUDclasses
             {
 
             }
-            finally 
+            finally
             {
                 conn.Close();
             }
@@ -101,7 +99,7 @@ namespace TTManagesyst.CRUDclasses
         }
 
         //Method to update data in database
-        public bool Update(TagsClass c) 
+        public bool Update(TagsClass c)
         {
             //create a default return type and set its value to false
             bool isSuccess = false;
@@ -130,7 +128,8 @@ namespace TTManagesyst.CRUDclasses
                 {
                     isSuccess = true;
                 }
-                else {
+                else
+                {
                     isSuccess = false;
                 }
             }
@@ -138,7 +137,7 @@ namespace TTManagesyst.CRUDclasses
             {
 
             }
-            finally 
+            finally
             {
                 conn.Close();
             }
@@ -171,7 +170,7 @@ namespace TTManagesyst.CRUDclasses
                 {
                     isSuccess = true;
                 }
-                else 
+                else
                 {
                     isSuccess = false;
                 }
@@ -180,7 +179,7 @@ namespace TTManagesyst.CRUDclasses
             {
 
             }
-            finally 
+            finally
             {
                 //close connection
                 conn.Close();

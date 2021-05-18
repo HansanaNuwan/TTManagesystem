@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTManagesyst.CRUDclasses;
 
@@ -45,7 +39,7 @@ namespace TTManagesyst
                 //call the clear method
                 Clear();
             }
-            else 
+            else
             {
                 //if failed to add
                 MessageBox.Show("Failed to add Tag !");
@@ -64,7 +58,7 @@ namespace TTManagesyst
         }
 
         //method to clear input fields
-        public void Clear() 
+        public void Clear()
         {
             TBtagId.Text = "";
             TBTagname.Text = "";
@@ -94,7 +88,7 @@ namespace TTManagesyst
                 //clear textbox
                 Clear();
             }
-            else 
+            else
             {
                 //if update failed
                 MessageBox.Show("Tag update Failed !");
@@ -145,7 +139,7 @@ namespace TTManagesyst
             {
                 //if failed
                 MessageBox.Show("Tag Delete failed !");
-            
+
             }
         }
 

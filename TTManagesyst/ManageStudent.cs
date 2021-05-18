@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using TTManagesyst.CRUD;
 
@@ -29,7 +23,7 @@ namespace TTManagesyst
 
             lblGroupID.Text = ys + "." + pg + "." + gn;
 
-            lblSGroupID.Text = ys + "." + pg + "." + gn + "."+ sgn;
+            lblSGroupID.Text = ys + "." + pg + "." + gn + "." + sgn;
 
             btnUpdate.Enabled = true;
 
@@ -62,7 +56,7 @@ namespace TTManagesyst
                 Clear();
 
             }
-            else 
+            else
             {
                 //if failed
                 MessageBox.Show("Failed to Add Student Group !");
@@ -83,7 +77,7 @@ namespace TTManagesyst
 
         }
         //method to clear fields
-        public void Clear() 
+        public void Clear()
         {
             TBID.Text = "";
             CBYearSem.Text = "";
@@ -151,7 +145,7 @@ namespace TTManagesyst
             lblGroupID.Text = dgvManageStudent.Rows[rowIndex].Cells[5].Value.ToString();
             lblSGroupID.Text = dgvManageStudent.Rows[rowIndex].Cells[6].Value.ToString();
 
-            
+
 
 
         }
@@ -168,14 +162,14 @@ namespace TTManagesyst
             {
                 //insert success
                 MessageBox.Show("Data Deleted !");
-                
+
                 //load data to table
                 DataTable dt = m.Select();
                 dgvManageStudent.DataSource = dt;
 
                 //clear input fields
                 Clear();
-                
+
 
             }
             else
@@ -192,6 +186,11 @@ namespace TTManagesyst
             stdm.Show();
 
             this.Close();
+        }
+
+        private void dgvManageStudent_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

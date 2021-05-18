@@ -1,11 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace TTManagesyst.CRUD
 {
@@ -48,13 +44,13 @@ namespace TTManagesyst.CRUD
             {
 
             }
-            finally 
+            finally
             {
                 conn.Close();
-            
+
             }
             return dt;
-        
+
         }
 
         //Insering data into the database
@@ -89,10 +85,11 @@ namespace TTManagesyst.CRUD
                     isSuccess = true;
 
                 }
-                else {
+                else
+                {
                     isSuccess = false;
                 }
-            
+
             }
             catch (Exception ex)
             {
@@ -104,8 +101,8 @@ namespace TTManagesyst.CRUD
             }
 
             return isSuccess;
-        
-        
+
+
         }
         //update data in database
         public bool Update(ManageStudentClass m)
@@ -140,7 +137,7 @@ namespace TTManagesyst.CRUD
 
                     isSuccess = true;
                 }
-                else 
+                else
                 {
                     isSuccess = false;
                 }
@@ -193,12 +190,13 @@ namespace TTManagesyst.CRUD
             {
 
             }
-            finally {
+            finally
+            {
 
                 conn.Close();
             }
             return isSuccess;
-        
+
         }
     }
 }
